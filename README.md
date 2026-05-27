@@ -1,4 +1,4 @@
-# Claude-Review — Colección de scripts (anonimizada y documentada)
+# Colección de scripts (anonimizada y documentada)
 
 Reorganización, anonimización y documentación de una colección histórica de scripts de administración de sistemas (PowerShell y Python), pensada para poder revisarse o compartirse sin exponer datos corporativos, credenciales ni información de clientes.
 
