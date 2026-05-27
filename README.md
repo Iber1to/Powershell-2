@@ -19,8 +19,6 @@ Cada carpeta de primer nivel es una categoría funcional con su propio `README.m
 | 09 | [`09-Python`](./09-Python/) | Utilidades en Python: Microsoft Graph (MSAL), registro de dispositivos en Google Cloud, calendarios ICS, GPOs y ejemplos. |
 | 10 | [`10-Templates-and-Examples`](./10-Templates-and-Examples/) | Módulo de funciones propio, plantillas de cabecera y ejemplos de referencia (WinForms, XML). |
 | 11 | [`11-Misc-and-Snippets`](./11-Misc-and-Snippets/) | Snippets, pruebas y scripts varios sin categoría fija. |
-| 90 | [`90-Homelab-Docker`](./90-Homelab-Docker/) | Ficheros docker-compose de laboratorio personal (no corporativo). |
-| 99 | [`99-Datasets-Redacted`](./99-Datasets-Redacted/) | Ficheros de datos del backup original con el contenido operativo eliminado por privacidad (sólo cabeceras + filas de ejemplo). |
 
 ## Anonimización aplicada
 
@@ -38,8 +36,6 @@ Todo el contenido textual ha pasado por un proceso de anonimización:
 | Proveedores / operadores | `VendorIT`, `VendorMSP`, `CarrierTelco` |
 
 > Los alias de cliente y servidor son ficticios y no mantienen un mapa público hacia los valores reales.
-
-> **Ficheros de datos** (`99-Datasets-Redacted/`): los CSV/LOG/XLSX del backup contenían datos personales; se ha eliminado el contenido real y se conserva sólo la estructura. Se descartaron además imágenes de marca de cliente, `.zip` y `.pyc` sin inspeccionar.
 
 > Parte del código es de terceros (PSADT, ConfigMgr Client Health de Anders Rødland, ConfigMgr Client TCP Port Tester de Trevor Jones, recordatorio de contraseñas de Robert Pearman, pipeline de winget de Andrew Taylor, etc.); en esos casos se conserva la atribución original en la cabecera del propio script.
 
