@@ -1,0 +1,33 @@
+<PortCheckList>
+  <Server>
+    <Computer>198.51.100.809</Computer>
+    <Ports>
+      <PortInfo>
+        <Port>135</Port>
+        <Type>BOTH</Type>
+      </PortInfo>
+      <PortInfo>
+        <Port>445</Port>
+        <Type>BOTH</Type>
+      </PortInfo>
+      <!-- NTP -->
+      <PortInfo>
+        <Port>123</Port>
+        <Type>UDP</Type>
+      </PortInfo>
+    </Ports>
+  </Server>
+ <Server>
+    <Computer>cm1.corp.contoso.com</Computer>
+    <Ports>
+      <PortInfo>
+        <Port>80</Port>
+        <Type>TCP</Type>
+      </PortInfo>
+      <PortInfo>
+        <Port>443</Port>
+        <Type>TCP</Type>
+      </PortInfo>
+    </Ports>
+  </Server>
+</PortCheckList>

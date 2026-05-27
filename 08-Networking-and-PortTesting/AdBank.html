@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Port Check Report</title>
+            <style>
+                body { 
+                    font-family: Arial, sans-serif; 
+                    margin: 0; 
+                    padding: 0; 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    }
+                .container {
+                    text-align: center;
+                    width: 80%;
+                    }
+                .success { color: green; }
+                .hidden { display: none; }
+                h1, h2, h3 { margin-bottom: 20px; }
+                #serverSummary, #serverDetails, #resultDetails { 
+                    display: flex; 
+                    justify-content: space-between;
+                    margin-bottom: 40px;
+                    }
+                .column {flex: 1;}
+            </style>
+            <script>
+                function toggleDetails(id) {
+                    var x = document.getElementById(id);
+                    if (x.style.display === 'none' || x.style.display === '') {x.style.display = 'block';} 
+                    else {x.style.display = 'none';}
+                }
+            </script>
+        </head>
+        <body>
+            <div class='container'>
+                <h1>Port Check Report</h1>
+                <h2 id='globalResult'>Global Result: Correcto</h2>
+                <section id='serverSummary'>
+                    <div class='column'>
+                        <h3>Server Information</h3>
+                        <p>Total Servers Tested: 0</p>
+                        <p>Servers OK: 0</p>
+                        <p>Servers with Failure: 0</p>
+                    </div>
+                    <div class='column'>
+                        <h3>Port Information</h3>
+                        <p>Total Ports Tested: 0</p>
+                        <p>Ports OK: 0</p>
+                        <p>Ports with Failure: 0</p>
+                    </div>
+                </section>
+                <section id='serverDetails'>
+                    <div class='column'>
+                        <h3>Servers OK</h3>
+                        
+                    </div>
+                    <div class='column'>
+                        <h3>Servers with Failures</h3>
+                        
+                    </div>
+                </section>
+                <section id='resultDetails'>
+                    <div class='column'>
+                        <h3>Ports OK Details</h3>
+                        <button onclick='toggleDetails("resultDetailsOKTable")'>Toggle OK Details</button>
+                        <div id='resultDetailsOKTable' class='hidden'>
+                            
+                        </div>
+                    </div>
+                    <div class='column'>
+                        <h3>Ports Failure Details</h3>
+                        <button onclick='toggleDetails("resultDetailsFailTable")'>Toggle Failure Details</button>
+                            <div id='resultDetailsFailTable' class='hidden'>
+                                
+                            </div>
+                    </div>
+                </section>
+            </div>
+        </body>
+    </html>

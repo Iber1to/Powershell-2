@@ -1,0 +1,26 @@
+﻿# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Secrets / env
+*.env
+*.key
+*.pem
+*.pfx
+*.cer
+*.crt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# PowerShell
+*.ps1xml.bak
